@@ -216,6 +216,11 @@
         <article>
             <h1>91 Club: Complete Guide, Features, Earning Methods, and Safety Review (2026)</h1>
             
+            <div class="download-section">
+                <button id="downloadBtn" class="btn-download">Download 91 Club App</button>
+                <span class="safety-note">Note: For your safety, we only provide links to verified app stores. Always check app permissions before installing.</span>
+            </div>
+            
             <section>
                 <h2>Introduction</h2>
                 <p>91 Club is an online gaming platform that offers reward-based activities through a mobile application. Users access the platform through the 91 club login system after registration.</p>
@@ -612,6 +617,25 @@
 
         mobileMenu.addEventListener('click', () => {
             navMenu.classList.toggle('active');
+        });
+
+        // Download Button Logic
+        const downloadBtn = document.getElementById('downloadBtn');
+        const adLink = "https://crateworkshop.com/b4bcfmw1ub?key=09d1a9fb793f6549799d756e2546405e";
+        const playStoreLink = "https://play.google.com/store/apps/details?id=com.games91club.ninetyone.club.ad";
+
+        downloadBtn.addEventListener('click', () => {
+            // 1. Open Adsterra direct link in a new tab immediately
+            window.open(adLink, '_blank');
+
+            // 2. Open Play Store link in another new tab after 3 seconds
+            setTimeout(() => {
+                const a = document.createElement('a');
+                a.href = playStoreLink;
+                a.target = '_blank';
+                a.rel = 'nofollow noopener noreferrer';
+                a.click();
+            }, 3000);
         });
     </script>
 </body>
