@@ -16,7 +16,12 @@
                     91 Club Guide
                 </a>
             </div>
-            <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="nav-menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -48,6 +53,15 @@
             <p>Please note that we are an independent guide website and are not the official support team for the 91 Club app. For specific account-related issues within the app, we recommend contacting their in-app customer service directly.</p>
             
             <p>We look forward to hearing from you!</p>
+            
+            <div class="internal-links" style="margin-top: 30px; padding: 15px; background: #f0f7ff; border-radius: 8px;">
+                <p><strong>Explore More:</strong> 
+                    <a href="index.html">Home</a> | 
+                    <a href="about.html">About Us</a> | 
+                    <a href="privacy-policy.html">Privacy Policy</a> | 
+                    <a href="disclaimer.html">Disclaimer</a>
+                </p>
+            </div>
         </article>
     </main>
 
@@ -65,5 +79,13 @@
             <p>&copy; 2026 91 Club Guide. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
