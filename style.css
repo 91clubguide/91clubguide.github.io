@@ -65,6 +65,32 @@ nav ul li {
     margin-left: 20px;
 }
 
+/* Hamburger Menu Styles */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 2px 0;
+    transition: 0.3s;
+}
+
+.internal-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.internal-links a:hover {
+    text-decoration: underline;
+}
+
 nav ul li a {
     text-decoration: none;
     color: var(--text-color);
@@ -183,15 +209,41 @@ footer p {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     header .container {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 20px;
     }
 
     .logo {
-        margin-bottom: 15px;
+        margin-bottom: 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--header-bg);
+        border-bottom: 1px solid var(--border-color);
+        padding: 20px 0;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
 
     nav ul li {
-        margin: 0 10px;
+        margin: 10px 0;
     }
 
     article h1 {
