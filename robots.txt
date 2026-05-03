@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://91clubguide.github.io/sitemap.html
 Sitemap: https://91clubguide.github.io/sitemap.xml
