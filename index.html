@@ -165,7 +165,12 @@
                     91 Club Guide
                 </a>
             </div>
-            <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="nav-menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -192,6 +197,7 @@
                 
                 <div class="internal-links" style="margin-top: 20px; padding: 15px; background: #f0f7ff; border-radius: 8px;">
                     <p><strong>Quick Links:</strong> 
+                        <a href="index.html">Home</a> | 
                         <a href="about.html">About Us</a> | 
                         <a href="contact.html">Contact Us</a> | 
                         <a href="privacy-policy.html">Privacy Policy</a> | 
@@ -556,5 +562,13 @@
             <p>&copy; 2026 91 Club Guide. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
