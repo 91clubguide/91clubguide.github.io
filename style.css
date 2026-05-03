@@ -33,6 +33,37 @@ body {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 0 20px;
+    position: relative;
+}
+
+/* Ad Sidebar Styles */
+.ad-sidebar {
+    position: fixed;
+    top: 100px;
+    width: 160px;
+    height: 600px;
+    display: none; /* Hidden by default, shown on desktop */
+    z-index: 10;
+}
+
+.ad-sidebar-left {
+    left: calc(50% - (var(--max-width) / 2) - 180px);
+}
+
+.ad-sidebar-right {
+    right: calc(50% - (var(--max-width) / 2) - 180px);
+}
+
+.mobile-ad-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+@media (min-width: 1300px) {
+    .ad-sidebar {
+        display: block;
+    }
 }
 
 /* Header & Navigation */
