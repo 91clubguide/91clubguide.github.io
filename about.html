@@ -16,7 +16,12 @@
                     91 Club Guide
                 </a>
             </div>
-            <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="nav-menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -48,6 +53,15 @@
             <p>At 91 Club Guide, we prioritize transparency and user education. We believe that every user should have access to the facts before participating in any reward-based gaming system. Our content is researched and structured to ensure you have the best possible experience while staying informed about potential risks.</p>
             
             <p>Thank you for choosing 91 Club Guide as your go-to resource. We are committed to keeping our guides updated with the latest information to serve our community better.</p>
+            
+            <div class="internal-links" style="margin-top: 30px; padding: 15px; background: #f0f7ff; border-radius: 8px;">
+                <p><strong>Explore More:</strong> 
+                    <a href="index.html">Home</a> | 
+                    <a href="contact.html">Contact Us</a> | 
+                    <a href="privacy-policy.html">Privacy Policy</a> | 
+                    <a href="disclaimer.html">Disclaimer</a>
+                </p>
+            </div>
         </article>
     </main>
 
@@ -65,5 +79,13 @@
             <p>&copy; 2026 91 Club Guide. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
