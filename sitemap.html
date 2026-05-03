@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap - 91 Club Guide</title>
+    <meta name="description" content="Sitemap for 91 Club Guide. Find all our guides, reviews, and legal pages in one place.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .sitemap-list {
+            list-style: none;
+            padding: 0;
+            margin: 30px 0;
+        }
+        .sitemap-list li {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            border-left: 4px solid var(--primary-color);
+        }
+        .sitemap-list a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .sitemap-list a:hover {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: #1a73e8; font-size: 1.5rem; font-weight: bold;">
+                    91 Club Guide
+                </a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article>
+            <h1>Sitemap</h1>
+            <p>Welcome to the 91 Club Guide sitemap. Use the links below to navigate through our website and find the information you need.</p>
+            
+            <ul class="sitemap-list">
+                <li><a href="https://91clubguide.github.io/">91 Club Guide - Home</a></li>
+                <li><a href="https://91clubguide.github.io/about.html">About Us</a></li>
+                <li><a href="https://91clubguide.github.io/contact.html">Contact Us</a></li>
+                <li><a href="https://91clubguide.github.io/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="https://91clubguide.github.io/disclaimer.html">Disclaimer</a></li>
+            </ul>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2026 91 Club Guide. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
