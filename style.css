@@ -1,0 +1,208 @@
+/* 
+   91 Club Guide - Clean, Fast, SEO-Optimized CSS
+   Focus: Readability, Performance, and Mobile Responsiveness
+*/
+
+:root {
+    --primary-color: #1a73e8;
+    --text-color: #333;
+    --bg-color: #ffffff;
+    --header-bg: #f8f9fa;
+    --footer-bg: #202124;
+    --footer-text: #ffffff;
+    --border-color: #e0e0e0;
+    --max-width: 900px;
+    --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--header-bg);
+    border-bottom: 1px solid var(--border-color);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 50px;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Main Content */
+main {
+    padding: 40px 0;
+}
+
+article h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+article h2 {
+    font-size: 1.8rem;
+    margin: 35px 0 15px;
+    color: #222;
+    border-left: 5px solid var(--primary-color);
+    padding-left: 15px;
+}
+
+article h3 {
+    font-size: 1.4rem;
+    margin: 25px 0 10px;
+    color: #444;
+}
+
+article p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+article ul {
+    margin: 0 0 20px 25px;
+}
+
+article ul li {
+    margin-bottom: 10px;
+}
+
+/* FAQ Section */
+#faq {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.faq-item {
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-item h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 40px 0 20px;
+    margin-top: 60px;
+}
+
+footer nav ul {
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+footer nav ul li {
+    margin: 5px 15px;
+}
+
+footer nav ul li a {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+footer nav ul li a:hover {
+    color: #fff;
+}
+
+footer p {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    article h1 {
+        font-size: 1.8rem;
+    }
+
+    article h2 {
+        font-size: 1.5rem;
+    }
+
+    article h3 {
+        font-size: 1.2rem;
+    }
+}
